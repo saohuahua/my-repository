@@ -41,6 +41,8 @@
 ## git分支
 `git branch` 查看所有的分支
 `git branch 分支名` 添加分支
+`git branch -d 分支名` 删除已经完成合并的分支
+`git branch -D 分支名` 删除未合并的分支
 `git checkout 分支名` 切换分支 但是语义不够明确，他可以用于恢复文件
 `git switch 分支名` 来准确切换分支
 
@@ -49,5 +51,4 @@
 如何合并分支？
 `git merge 分支名`, 例如在main分支下合并dev分支  `git merge dev`
 
-如何删除分支
-`git branch -d 分支名`
+
