@@ -43,3 +43,11 @@
 `git branch 分支名` 添加分支
 `git checkout 分支名` 切换分支 但是语义不够明确，他可以用于恢复文件
 `git switch 分支名` 来准确切换分支
+
+分支内的代码，文件是彼此独立的，在切换分支之前，确保更改已经提交到暂存区且已提交
+
+如何合并分支？
+`git merge 分支名`, 例如在main分支下合并dev分支  `git merge dev`
+
+如何删除分支
+`git branch -d 分支名`
