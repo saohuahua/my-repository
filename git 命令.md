@@ -38,3 +38,8 @@
 2.设置分支 `git branch -M main` 默认分支是main 可以省略
 3.将本地仓库push到远程仓库 `git push -u origin main`
 
+## git分支
+`git branch` 查看所有的分支
+`git branch 分支名` 添加分支
+`git checkout 分支名` 切换分支 但是语义不够明确，他可以用于恢复文件
+`git switch 分支名` 来准确切换分支
