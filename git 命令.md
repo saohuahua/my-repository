@@ -52,3 +52,19 @@
 `git merge 分支名`, 例如在main分支下合并dev分支  `git merge dev`
 
 ## 如何处理分支冲突
+方法1：在产生冲突的文件中 对如下
+` ++<<<<<<< HEAD
+++这是main文件，在main分支下开发的！ 在main分支下又添加
+++=======
+++这是main文件，在main分支下开发的！ 在feat环境在，在其后面进行添加了一行
+++>>>>>>> feat ` 
+进行合并后可以得到
+`这是main文件，在main分支下开发的！ 在main分支下又添加 这是main文件，在main分支下开发的！ 在feat环境在，在其后面进行添加了一行 将两者合并到了一行`
+
+方法2 `rebase` 变基
+`git switch dev,git rebase main`
+`git switch main,git rebase dev` 
+
+1.找到共同祖先分支，以此来区分两个不同的分支
+2.根据`git rebase dev`将main分支移植到dev中的分支上去
+![alt text](QQ_1752745255644.png)
