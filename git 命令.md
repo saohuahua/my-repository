@@ -51,4 +51,4 @@
 如何合并分支？
 `git merge 分支名`, 例如在main分支下合并dev分支  `git merge dev`
 
-
+## 如何处理分支冲突
